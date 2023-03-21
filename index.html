@@ -1,54 +1,143 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
     <title>My Portfolio</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <div class="wrapper">
-            <h1 class="logo"> My Logo</h1>
-            <nav>
-                <ul>
-                     <li><a href="">HOME</a></li>
-                     <li><a href="">PROJECTS</a></li>
-                     <li><a href="">ABOUT</a></li>
-                     <li><a href="">CONTACT</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="wrapper">
+        <h1 class="logo">My Logo</h1>
+        <nav>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">PROJECTS</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-        <!--START HOMEPAGE CONTENT-->
-        <div class="cube">
-            <div class="top"></div>
-            <div>
-                    <span style="--i:0;" ></span>
-                    <span style="--i:1;" ></span>
-                    <span style="--i:2;" ></span>
-                    <span style="--i:3;" ></span>
-            </div>
+    <!--START HOMEPAGE CONTENT-->
+    <section id="hero">
+      <div class="cube">
+        <div class="top"></div>
+        <div>
+          <span style="--i: 0"></span>
+          <span style="--i: 1"></span>
+          <span style="--i: 2"></span>
+          <span style="--i: 3"></span>
         </div>
+      </div>
 
- 
-        <!--END HOMEPAGE CONTENT-->
+      <div class="intro">
+        <h2>Am Takudzwa</h2>
+        <h1>UX/UI DESIGNER</h1>
+        <button>ABOUT ME</button>
+      </div>
+    </section>
 
+    <!-- START SKILLS CONTENT -->
+    <section id="skills">
+      <div class="rect-main"></div>
+      <div class="skills-wrapper">
+        <div class="skill">
+          <div class="icon">
+            <svg width="74" height="45" viewBox="0 0 74 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.56277 1.08286V3.32878H12.4935V1.08286H2.56277ZM27.3464 1.08286L22.2208 6.2164H17.9394V13.5959H22.8538C26.813 7.08301 33.9695 2.72591 42.1255 2.72591C50.2816 2.72591 57.4381 7.08301 61.3973 13.5959H74V6.2164H62.0303L56.9047 1.08286C42.1255 -0.360952 42.1255 -0.360952 27.3464 1.08286ZM42.1255 5.61353C31.2493 5.61353 22.463 14.4135 22.463 25.3068C22.463 36.2 31.2493 45 42.1255 45C53.0018 45 61.7881 36.2 61.7881 25.3068C61.7881 14.4135 53.0018 5.61353 42.1255 5.61353ZM0 6.2164V13.5959H15.0563V6.2164H0ZM42.1255 8.57671C51.3339 8.57671 58.8295 16.0839 58.8295 25.3066C58.8295 34.5293 51.3339 42.0368 42.1255 42.0368C32.9172 42.0368 25.4216 34.5295 25.4216 25.3068C25.4216 16.084 32.9172 8.57671 42.1255 8.57671ZM38.6359 12.1128C36.6861 12.1801 34.5167 13.1597 32.7447 14.7723C29.5372 17.6903 28.5254 21.8073 30.4846 23.9674C32.4439 26.1275 36.6321 25.5129 39.8397 22.5945C43.0469 19.6761 44.0587 15.5591 42.0994 13.399C41.2986 12.5161 40.0782 12.0627 38.6359 12.1128ZM0 16.4835V39.2636H15.0563V16.4835H0ZM17.9394 16.4835V39.2636H24.4123C21.387 35.4198 19.5799 30.5714 19.5799 25.3068C19.5799 22.1774 20.2187 19.1953 21.3719 16.4835H17.9394ZM62.8792 16.4835C64.0324 19.1953 64.6712 22.1774 64.6712 25.3068C64.6712 30.5714 62.8641 35.4198 59.8388 39.2636H74V16.4835H62.8792ZM0 42.1512V44.3971H15.0563V42.1512H0ZM17.9394 42.1512V44.3971H30.0949C29.0455 43.7313 28.0525 42.9801 27.126 42.1512H17.9394ZM57.1251 42.1512C56.1986 42.98 55.2056 43.7312 54.1563 44.3971H74V42.1512H57.1251Z" fill="#CD1C29"/>
+                </svg>
+          </div>
+          <h3>UI Design</h3>
+          <a href="">Know More</a>
+        </div>
+        <div class="skill">
+          <div class="icon">
+            <svg width="44" height="40" viewBox="0 0 44 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 38V2M42 2H34M42 2V34L38 38L34 34V2M42 2V18M34 2V18M34 8H42M2 2V38H28V2H2Z" stroke="#FCFBFB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+          </div>
+          <h3>Product Design</h3>
+          <a href="">Know More</a>
+        </div>
+        <div class="skill">
+          <div class="icon">
+            <svg width="74" height="45" viewBox="0 0 74 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.56277 1.08286V3.32878H12.4935V1.08286H2.56277ZM27.3464 1.08286L22.2208 6.2164H17.9394V13.5959H22.8538C26.813 7.08301 33.9695 2.72591 42.1255 2.72591C50.2816 2.72591 57.4381 7.08301 61.3973 13.5959H74V6.2164H62.0303L56.9047 1.08286C42.1255 -0.360952 42.1255 -0.360952 27.3464 1.08286ZM42.1255 5.61353C31.2493 5.61353 22.463 14.4135 22.463 25.3068C22.463 36.2 31.2493 45 42.1255 45C53.0018 45 61.7881 36.2 61.7881 25.3068C61.7881 14.4135 53.0018 5.61353 42.1255 5.61353ZM0 6.2164V13.5959H15.0563V6.2164H0ZM42.1255 8.57671C51.3339 8.57671 58.8295 16.0839 58.8295 25.3066C58.8295 34.5293 51.3339 42.0368 42.1255 42.0368C32.9172 42.0368 25.4216 34.5295 25.4216 25.3068C25.4216 16.084 32.9172 8.57671 42.1255 8.57671ZM38.6359 12.1128C36.6861 12.1801 34.5167 13.1597 32.7447 14.7723C29.5372 17.6903 28.5254 21.8073 30.4846 23.9674C32.4439 26.1275 36.6321 25.5129 39.8397 22.5945C43.0469 19.6761 44.0587 15.5591 42.0994 13.399C41.2986 12.5161 40.0782 12.0627 38.6359 12.1128ZM0 16.4835V39.2636H15.0563V16.4835H0ZM17.9394 16.4835V39.2636H24.4123C21.387 35.4198 19.5799 30.5714 19.5799 25.3068C19.5799 22.1774 20.2187 19.1953 21.3719 16.4835H17.9394ZM62.8792 16.4835C64.0324 19.1953 64.6712 22.1774 64.6712 25.3068C64.6712 30.5714 62.8641 35.4198 59.8388 39.2636H74V16.4835H62.8792ZM0 42.1512V44.3971H15.0563V42.1512H0ZM17.9394 42.1512V44.3971H30.0949C29.0455 43.7313 28.0525 42.9801 27.126 42.1512H17.9394ZM57.1251 42.1512C56.1986 42.98 55.2056 43.7312 54.1563 44.3971H74V42.1512H57.1251Z" fill="#CD1C29"/>
+                </svg>
+          </div>
+          <h3>UX Design</h3>
+          <a href="">Know More</a>
+        </div>
+        <h2>Acquired Skills</h2>
+        <div class="skill-1">
+          <h3>Website UI Develpment</h3>
+          <a href="#">Featured Project</a>
+        </div>
+        <div class="skill-1">
+          <h3>Digital Marketing</h3>
+          <a href="#">Featured Project</a>
+        </div>
+        <div class="skill-1">
+          <h3>Mobile App Design</h3>
+          <a href="#">Featured Project</a>
+        </div>
+        <div class="skill-1">
+          <h3>Branding</h3>
+          <a href="#">Featured Project</a>
+        </div>
+      </div>
+    </section>
 
-        <!--ABOUT ME CONTENT START HERE-->
+    <section id="projects">
+      <div class="featured-proj">
+        <h3>Featured Projects</h3>
+        <a href="#">View All</a>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="imgBox">
+        <div class="imgBox-inner">
+          <img src="./images/HOME 2.png" alt="" />
+          <p>Beasty Recycling</p>
+          <a href="#">Know More</a>
+        </div>
+        <div class="imgBox-inner">
+          <img src="./images/HOME 5.png" alt="" />
+          <p>Ozark Fitness</p>
+          <a href="#">Know More</a>
+        </div>
+      </div>
+      <div class="imgBox">
+        <div class="imgBox-inner">
+          <img src="./images/home 9.png" alt="" />
+          <p>Saint Joseph's Foundation</p>
+          <a href="#">Know More</a>
+        </div>
+        <div class="imgBox-inner">
+          <img src="./images/home 4.png" alt="" />
+          <p>Sterling Home Designs</p>
+          <a href="#">Know More</a>
+        </div>
+      </div>
+      <div class="rect-proj"></div>
+    </section>
 
-        <!--ABOUT ME CONTENT END HERE-->
+    <section id="hire-me">
+      <div class="text">
+        <h2>Let's work together on <br />your next project</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Facere non
+          dignissimos impedit, ipsum <br>ipsam minus.
+        </p>
+      </div>
+      <a href="#">Contact</a>
+    </section>
 
-
-
-    <footer>
-        <div class="wrapper"
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>
-
-  
