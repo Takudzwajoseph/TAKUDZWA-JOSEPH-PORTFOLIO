@@ -146,15 +146,54 @@ header nav ul li a:hover{
     font-family: 'poppinsBold';
     margin-block: 10px;
 }
-#hero .intro button{
-    padding: 15px;
-    font-size: 12px;
-    border-radius: 0;
-    border: none;
-    box-shadow: 3px 3px 2px #000;
+
+#hero .intro a{
+    position: relative;
+    text-transform: uppercase;
     background: var(--red);
+    padding: 15px 17px;
     color: var(--white);
+    font-family: 'poppinsSemiBold';
+    font-size: 12px;
+    /* box-shadow: 2px 2px 2px var(black); */
 }
+#hero .intro a:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 2px solid var(--white);
+    border-right: 2px solid var(--white);
+    animation: border-top-right 3s infinite alternate;
+
+}
+#hero .intro a:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-bottom: 2px solid var(--white);
+    border-left: 2px solid var(--white);
+    animation: border-bottom-left 3s infinite alternate;
+
+}
+@keyframes border-top-right{
+    0% {width:0%; height:0%;}
+    20% {width:100%; height:0%;}
+    50%{width:100%; height:95%;}
+    100%{width: 100%; height: 95%;}
+
+}
+@keyframes border-bottom-left{
+    0% {width:0%; height:0%; opacity: 0;}
+    50% {width:0%; height:0%; opacity: 0;}
+    50.1% {width:0%; height:0%; opacity: 1;}
+    75%{width:100%; height:0%; opacity: 1;}
+    100%{width: 100%; height: 95%; opacity: 1;}
+
+}
+
+
 
 /* ******************************************************* */
 /* ********************* S K I L L S ********************* */
