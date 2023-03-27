@@ -10,7 +10,7 @@
 :root{
     --white: #fff;
     --red: #f00;
-    --navy: #111111;
+    --navy: #000000;
     --grey: #181818;
     --light-grey: #1e1e1e;
 }
@@ -70,9 +70,23 @@ header nav ul li a:hover{
         transition: 0.4sec;
 
 }
-.hamburger.is-active, .hamburger:after{
-    transform: rotate(-45deg)translate() ; 
+.hamburger.is-active:before{
+    transform: rotate(-45deg)translate(-9px, 6px);
+
 }
+.hamburger.is-active:after{
+    transform: rotate(45deg)translate(-9px, -7px);
+}
+
+
+.hamburger.is-active .bar{
+    opacity: 0;
+
+}
+
+
+
+
 /* *************************************************** */
 /* ********************* H E R O ********************* */
 /* *************************************************** */
