@@ -47,9 +47,11 @@ header nav ul li a{
     color: var(--white);
     transition: .3s ease-in-out;
 }
-header nav ul li a:hover{
+header nav ul li a:hover,
+header nav ul li a.active{
     color: #EF0C0C;
 }
+
 .hamburger{
     position: relative;
     display: block;
@@ -176,9 +178,10 @@ header nav ul li a:hover{
 #hero .intro h2{
     color: var(--red);
     font-family: 'poppinsSemiBold';
+    font-size:30px ;
 }
 #hero .intro h1{
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'poppinsBold';
     margin-block: 10px;
 }
