@@ -5,6 +5,11 @@ hamburger.onclick = function () {
   nav.classList.toggle("active");
 };
 
+navLink = document.querySelector(".nav-link")
+navLink.onclick = () =>{
+  navLink.classList.toggle("active")
+}
+ 
 window.onload = function () {
   window.addEventListener("scroll", function (e) {
     if (window.pageYOffset > 100) {
@@ -13,14 +18,5 @@ window.onload = function () {
       document.querySelector("header").classList.remove("is-scrolling");
     }
   });
-
-  // const menu_btn = document.querySelector('.hamburger');
-
-  // menu_btn.addEventListener('click', function (){
-  //     menu_btn.classList.toggle('is-active');
-
-  //     if(menu_btn == 'is-active'){
-  //         nav.classList.add('active')
-  //     }
-  // });
 };
+

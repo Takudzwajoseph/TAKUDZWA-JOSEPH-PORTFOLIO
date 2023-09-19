@@ -6,6 +6,9 @@
         font-size: 72px;
     }
 }
+header .wrapper nav-link.active{
+    color: #f10;
+}
 
 #contact-me .wrapper {
     display: flex;
@@ -63,5 +66,47 @@
             color: #fff;
             font-family: 'poppinsSemiBold';
         }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #contact-me .wrapper{
+        padding-inline: 5rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #contact-me h1{
+        font-size: 64px;
+    }
+    #contact-me .wrapper{
+        gap: 40px;
+        padding-inline: 2rem;
+
+        & form{
+            & input:nth-child(4){
+                width: 50%;
+            }
+        }
+        & .info{
+            & p{
+                font-size: 14px;
+                width: 100%;
+
+                /* & img{
+                    width: 8%;
+                } */
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    #contact-me h1{
+        font-size: 54px;
+    }
+    #contact-me .wrapper{
+        flex-direction: column-reverse;
+        gap: 70px;
     }
 }
